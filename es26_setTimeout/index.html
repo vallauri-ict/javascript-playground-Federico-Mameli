@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>setTimeout</title>
+    <script type="text/javascript" src="index.js"></script>
+	<style>
+		#wrapper{
+			margin:90px auto; 
+			width:200px;
+		}
+	    #lblRisultato{
+			width: 300px; 
+			border: 2px solid black; 
+			margin: 0 auto; 
+			height: 200px; 
+			padding: 30px; 
+			font-size: 30pt; 
+			font-weight: bold; 
+			text-align: center; 
+			line-height: 100px;	   
+	    }
+		img:nth-of-type(1){
+			border: 1px solid black;
+			width:67px;
+			height:92px;
+		}
+		p{
+			display:inline;
+		}
+	</style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <img id="imgCarta"> &nbsp; &nbsp; &nbsp;
+        <img src="img/dorso.JPG">
+        <br/><br/>
+		
+        <input type="button" id="btnGioca" value="Gioca" onClick="gioca()">
+        <br/><br/>
+		
+        Punteggio:<p id="lblSomma"> 0 </p> <br/>
+        Numero di carte estratte:<p id="lblCarte"> 0 </p>
+    </div>
+	
+    <div id="lblRisultato"> </div>
+	
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Registration</title>
+	<link type="text/css" rel="stylesheet" href="index.css">
+	<script type="text/javascript" src="index.js"> </script>
+</head>
+	
+<body>
+    <h1 align="center">Registrazione a Vallauri.edu</h1>
+	<form id="wrapper">
+	    <label for="txtName"> imposta username:</label>
+		<input type="text" id="txtUser" placeholder="nome" onchange="controllaCredenziali(this)"> 
+	    <label for="txtPwd"> imposta password:</label>
+		<input type="password" id="txtPwd" placeholder="password" onchange="controllaCredenziali(this)"> 
+		
+		<div id="captcha">
+			<div class="captcha"> </div>
+			<div class="captcha"> </div>
+			<div class="captcha"> </div>
+			<div class="captcha"> </div>
+			<div class="captcha"> </div>
+		</div> 
+		
+		<input type="text" id="txtCaptcha" />
+		<input type="button" id="btnCaptcha" value="Non sono un Robot" onclick="controllaCaptcha()"/>
+		<img id="imgOk">
+		<input type="button" id="btnGenera" value="Genera un altro captcha" onclick="generaCaptcha()"/>
+
+		<input type="button" id="btnInvia" value="Invia" onclick="invia()"/>
+	</form>
+</body>
+</html>
