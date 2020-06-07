@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Vallauri</title>
+	<meta charset="utf-8">
+    <link rel="stylesheet" href="index.css"/>
+    <script type="application/javascript" src="index.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+		<div>
+			<h1> CALCOLATRICE </h1>
+        <input type="text" value="" id="txtOp" readonly />
+        <br/>
+        <input type="button" value="7" name="btnNum" id="btn7" />
+        <input type="button" value="8" name="btnNum" id="btn8" />
+        <input type="button" value="9" name="btnNum" id="btn9" />
+        <input type="button" value="/" name="btnOperatore" id="btn/" />
+        <br/>
+        <input type="button" value="4" name="btnNum" id="btn4" />
+        <input type="button" value="5" name="btnNum" id="btn5" />
+        <input type="button" value="6" name="btnNum" id="btn6" />
+        <input type="button" value="*" name="btnOperatore" id="btn*" />
+        <br/>
+        <input type="button" value="1" name="btnNum" id="btn1" />
+        <input type="button" value="2" name="btnNum" id="btn2" />
+        <input type="button" value="3" name="btnNum" id="btn3" />
+        <input type="button" value="-" name="btnOperatore" id="btn-" />
+        <br/>
+        <input type="button" value="0" name="btnNum" id="btn0" />
+        <input type="button" value="." name="btnNum" id="puntino" />
+        <input type="button" value="C" id="btnCanc" onclick="resetta()" />
+        <input type="button" value="+" name="btnOperatore" id="btn+" />
+        <br/>
+        <input type="button" value="=" id="btnRis" onclick="calcola()" />
+		</div>
+    </div>
+</body>
