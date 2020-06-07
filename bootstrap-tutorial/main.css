@@ -134,6 +134,15 @@ body {
 	padding: 40px 0;
 }
 
+footer a{
+	color:#c0b283;
+}
+
+footer a:hover{
+	color:#dcd0c0;
+	text-decoration:none;
+}
+
 /*--- media queries ---*/
 
 @media (max-width: 575.98px) {
